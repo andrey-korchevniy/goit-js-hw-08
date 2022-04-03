@@ -19,7 +19,7 @@ try {
 } catch { };
 
 // вешаем слушателя на событие Input и submit
-refs.formInput.addEventListener('input', throttle(onFormInput, 500));
+refs.formInput.addEventListener('input', throttle(onFormInput, 1000));
 refs.formInput.addEventListener('submit', onSubmit);
 
 // получаем значение полей формы и записыаем в локальное хранилище
